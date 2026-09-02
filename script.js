@@ -56,4 +56,32 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Dynamically add animation classes to elements
+    const elementsToAnimate = document.querySelectorAll('.section-header, .service-card, .timeline-item, .card-wrapper, .echo-card, .contact-container');
+    elementsToAnimate.forEach((el, index) => {
+        el.classList.add('animate-on-scroll');
+        const delay = (index % 3) * 100; 
+        if(delay > 0) el.classList.add(`delay-${delay}`);
+    });
+
+    // Scroll Animations (Intersection Observer)
+    const animateElements = document.querySelectorAll('.animate-on-scroll');
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
+    };
+
+    const scrollObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    animateElements.forEach(el => {
+        scrollObserver.observe(el);
+    });
+
 });
