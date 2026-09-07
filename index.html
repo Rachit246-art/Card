@@ -3,27 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Authentic Cards - Premium Collection</title>
+    <title>Aurelia - Premium Digital E-Invitations | Royal Online Invites</title>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600;1,700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Sliding Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="marquee-track">
+            <span>&#10024; Free Pan India Digital Delivery &nbsp;&nbsp;|&nbsp;&nbsp; &#127912; Customisation Available &nbsp;&nbsp;|&nbsp;&nbsp; &#9733; Authentic Designs &nbsp;&nbsp;|&nbsp;&nbsp; &#10084;&#65039; Made with Love &nbsp;&nbsp;|&nbsp;&nbsp; &#128241; WhatsApp Us Anytime &nbsp;&nbsp;|&nbsp;&nbsp; &#127775; Premium Royal E-Invites &nbsp;&nbsp;|&nbsp;&nbsp; &#10024; Free Pan India Digital Delivery &nbsp;&nbsp;|&nbsp;&nbsp; &#127912; Customisation Available &nbsp;&nbsp;|&nbsp;&nbsp; &#9733; Authentic Designs &nbsp;&nbsp;|&nbsp;&nbsp; &#10084;&#65039; Made with Love &nbsp;&nbsp;|&nbsp;&nbsp; &#128241; WhatsApp Us Anytime &nbsp;&nbsp;|&nbsp;&nbsp; &#127775; Premium Royal E-Invites</span>
+        </div>
+    </div>
+
     <nav id="navbar">
         <div class="nav-container">
             <a href="#home" class="logo">
                 <span class="logo-icon">✧</span>
-                <span class="logo-text">AURELIA<br><small>AUTHENTIC CARDS</small></span>
+                <span class="logo-text">AURELIA<br><small>AUTHENTIC E-INVITES</small></span>
             </a>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#service">Service</a></li>
-                <li><a href="#journey">Journey</a></li>
-                <li><a href="#vault">Vault</a></li>
-                <li><a href="#echoes">Echoes</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#service">E-Invites</a></li>
+                <li><a href="#vault">Collections</a></li>
+                <li><a href="#journey">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="nav-actions">
-                <a href="#contact" class="btn btn-primary nav-contact-btn">Contact Us</a>
-                <button class="icon-btn hamburger" id="hamburger" aria-label="Menu">☰</button>
+                <a href="#contact" class="btn btn-primary nav-contact-btn">Get Yours</a>
+                <button class="icon-btn hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
             </div>
         </div>
     </nav>
@@ -49,318 +57,473 @@
         </div>
     </header>
 
-    <section id="service" class="services-section">
-        <div class="section-header">
-            <h2>Our Offerings</h2>
-            <p>Bespoke services tailored to your royal celebration</p>
+    <!-- Shop by Occasion -->
+    <section class="occasions-section">
+        <p class="sec-label">Shop by Occasion</p>
+        <h2 class="occ-title">Invitations for Every Special Moment</h2>
+        <div class="occ-divider">&#10022;</div>
+        <div class="occ-slider-wrap">
+            <button class="occ-arrow" id="occPrev">&#8249;</button>
+            <div class="occ-track" id="occTrack">
+                <div class="occ-item"><div class="occ-circle">&#127963;</div><span>Wedding</span></div>
+                <div class="occ-item"><div class="occ-circle">&#128141;</div><span>Engagement</span></div>
+                <div class="occ-item"><div class="occ-circle">&#127925;</div><span>Sangeet</span></div>
+                <div class="occ-item"><div class="occ-circle">&#127807;</div><span>Mehendi</span></div>
+                <div class="occ-item"><div class="occ-circle">&#127804;</div><span>Haldi</span></div>
+                <div class="occ-item"><div class="occ-circle">&#129346;</div><span>Reception</span></div>
+                <div class="occ-item"><div class="occ-circle">&#128197;</div><span>Save the Date</span></div>
+                <div class="occ-item"><div class="occ-circle">&#127874;</div><span>Birthday</span></div>
+            </div>
+            <button class="occ-arrow" id="occNext">&#8250;</button>
         </div>
-        <div class="services-grid">
-            <div class="service-card">
-                <span class="service-icon">✨</span>
-                <h3>Custom Design</h3>
-                <p>Bespoke illustrations, monogram creation, and tailored color palettes crafted just for you.</p>
+    </section>
+
+    <!-- Featured Collection -->
+    <section id="vault" class="feat-section">
+        <div class="feat-layout">
+            <div class="feat-sidebar">
+                <p class="sec-label">Featured Collection</p>
+                <h2>Our Most<br><em>Loved Designs</em></h2>
+                <p class="feat-sub">Timeless invites crafted to make your story unforgettable.</p>
+                <a href="#contact" class="btn btn-outline-crimson">View All Designs &#8594;</a>
             </div>
-            <div class="service-card">
-                <span class="service-icon">🖨️</span>
-                <h3>Premium Printing</h3>
-                <p>Letterpress, gold foil stamping, and luxurious velvet finishes that demand to be touched.</p>
-            </div>
-            <div class="service-card">
-                <span class="service-icon">🎁</span>
-                <h3>Complete Suites</h3>
-                <p>From Save-the-Dates to RSVP cards, and customized sweet boxes for your guests.</p>
+            <div class="feat-cards-outer">
+                <button class="feat-arrow" id="featPrev">&#8249;</button>
+                <div class="feat-cards-track" id="featTrack">
+                    <div class="feat-card">
+                        <div class="feat-img"><img src="assets/Products/ChatGPT Image Sep 2, 2026, 11_28_46 AM.png" alt="Royal Heritage"></div>
+                        <h4>Royal Heritage</h4><p class="feat-price">&#8377;599</p>
+                    </div>
+                    <div class="feat-card">
+                        <div class="feat-img"><img src="assets/Products/ChatGPT Image Sep 2, 2026, 11_28_56 AM.png" alt="Floral Royale"></div>
+                        <h4>Floral Royale</h4><p class="feat-price">&#8377;1,099</p>
+                    </div>
+                    <div class="feat-card">
+                        <div class="feat-img"><img src="assets/Products/ChatGPT Image Sep 2, 2026, 11_29_04 AM.png" alt="Vintage Charm"></div>
+                        <h4>Vintage Charm</h4><p class="feat-price">&#8377;799</p>
+                    </div>
+                    <div class="feat-card">
+                        <div class="feat-img"><img src="assets/Products/ChatGPT Image Sep 2, 2026, 11_29_13 AM.png" alt="Divine Union"></div>
+                        <h4>Divine Union</h4><p class="feat-price">&#8377;899</p>
+                    </div>
+                    <div class="feat-card">
+                        <div class="feat-img"><img src="assets/Products/ChatGPT Image Sep 2, 2026, 11_29_22 AM.png" alt="Regal Peacock"></div>
+                        <h4>Regal Peacock</h4><p class="feat-price">&#8377;999</p>
+                    </div>
+                    <div class="feat-card">
+                        <div class="feat-img"><img src="assets/Products/ChatGPT Image Sep 2, 2026, 11_29_31 AM.png" alt="Royal Canvas"></div>
+                        <h4>Royal Canvas</h4><p class="feat-price">&#8377;749</p>
+                    </div>
+                </div>
+                <button class="feat-arrow" id="featNext">&#8250;</button>
             </div>
         </div>
     </section>
 
-    <section id="journey" class="journey-section">
-        <div class="section-header">
-            <h2>The Creation Process</h2>
-            <p>How we bring your dream invitations to life</p>
+    <!-- Process / Customised Invitations -->
+    <section id="service" class="process-section">
+        <div class="process-bg-pattern"></div>
+        <div class="process-inner">
+            <div class="process-content">
+                <div class="process-eyebrow-wrap">
+                    <span class="process-pill">&#10022; Bespoke Couture &#10022;</span>
+                    <p class="process-eyebrow">Customised Invitations</p>
+                </div>
+                <h2 class="process-title">As Unique As<br><em>Your Love Story</em></h2>
+                <div class="process-divider-gold">
+                    <span class="p-line"></span>
+                    <span class="p-gem">&#9830;</span>
+                    <span class="p-line"></span>
+                </div>
+                <p class="process-intro">From traditional Indian symbolism to bespoke wedding palettes, we tailor every digital invitation to mirror your celebration's soul.</p>
+
+                <div class="process-steps-grid">
+                    <div class="process-card">
+                        <div class="ps-header">
+                            <div class="ps-num">01</div>
+                            <div class="ps-icon">&#127912;</div>
+                        </div>
+                        <div class="ps-body">
+                            <h4>Select Design</h4>
+                            <p>Browse our royal collections or share your custom moodboard.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-card">
+                        <div class="ps-header">
+                            <div class="ps-num">02</div>
+                            <div class="ps-icon">&#9999;&#65039;</div>
+                        </div>
+                        <div class="ps-body">
+                            <h4>Share Details</h4>
+                            <p>Provide auspicious dates, venues, family names &amp; traditions.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-card">
+                        <div class="ps-header">
+                            <div class="ps-num">03</div>
+                            <div class="ps-icon">&#128065;&#65039;</div>
+                        </div>
+                        <div class="ps-body">
+                            <h4>Live Preview</h4>
+                            <p>Review the tailored draft with unlimited font &amp; color revisions.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-card">
+                        <div class="ps-header">
+                            <div class="ps-num">04</div>
+                            <div class="ps-icon">&#128241;</div>
+                        </div>
+                        <div class="ps-body">
+                            <h4>Digital Dispatch</h4>
+                            <p>Receive high-definition WhatsApp &amp; PDF files ready to share.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-cta-wrap">
+                    <a href="#contact" class="btn btn-process-gold">Create Your Invite &#8594;</a>
+                    <span class="process-hint">&#10003; Free Design Consultation &bull; Fast 24-48h Delivery</span>
+                </div>
+            </div>
+
+            <div class="process-showcase">
+                <div class="process-glow-backdrop"></div>
+                <div class="process-img-frame">
+                    <div class="frame-gold-border"></div>
+                    <img src="assets/Products/ChatGPT Image Sep 2, 2026, 11_32_12 AM.png" alt="Customised royal invitation">
+                    <div class="seal-badge">
+                        <span class="seal-star">&#10022;</span>
+                        <span class="seal-text">AURELIA<br>ROYAL SEAL</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-dot">1</div>
-                <div class="timeline-content">
-                    <h3>The Consultation</h3>
-                    <p>We sit together to understand your vision, cultural elements, and the story of your love.</p>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="journey" class="why-section">
+        <div class="why-decor-bg"></div>
+        <div class="why-header-wrap">
+            <span class="why-pill">Royal Heritage &bull; Modern Craft</span>
+            <p class="sec-label">Why Choose Aurelia</p>
+            <h2 class="why-heading">Tradition, Trust &amp;<br><em>Timeless Elegance</em></h2>
+            <div class="why-ornament">
+                <span class="orn-line"></span>
+                <span class="orn-gem">&#10022;</span>
+                <span class="orn-line"></span>
+            </div>
+            <p class="why-intro-desc">Crafted for families who cherish legacy, elegance, and unforgettable first impressions.</p>
+        </div>
+
+        <div class="why-layout">
+            <div class="why-features">
+                <div class="why-feat">
+                    <div class="wf-icon-wrap">
+                        <span class="wf-icon">&#127912;</span>
+                    </div>
+                    <div class="wf-content">
+                        <h4>Authentic Indian Artistry</h4>
+                        <p>Intricate paisleys, Pichwai motifs &amp; Mughal arches deeply rooted in heritage.</p>
+                    </div>
+                    <div class="wf-sparkle">&#10023;</div>
+                </div>
+
+                <div class="why-feat">
+                    <div class="wf-icon-wrap">
+                        <span class="wf-icon">&#9733;</span>
+                    </div>
+                    <div class="wf-content">
+                        <h4>Bespoke Luxury Quality</h4>
+                        <p>Pixel-perfect typography, curated color palettes &amp; high-res digital audio-visuals.</p>
+                    </div>
+                    <div class="wf-sparkle">&#10023;</div>
+                </div>
+
+                <div class="why-feat">
+                    <div class="wf-icon-wrap">
+                        <span class="wf-icon">&#128640;</span>
+                    </div>
+                    <div class="wf-content">
+                        <h4>Instant Pan-India &amp; Global Delivery</h4>
+                        <p>High-speed WhatsApp &amp; PDF dispatch ready to share with loved ones worldwide.</p>
+                    </div>
+                    <div class="wf-sparkle">&#10023;</div>
+                </div>
+
+                <div class="why-feat">
+                    <div class="wf-icon-wrap">
+                        <span class="wf-icon">&#127807;</span>
+                    </div>
+                    <div class="wf-content">
+                        <h4>Sustainable &amp; Eco-Conscious</h4>
+                        <p>Zero-waste celebrations saving thousands of trees without compromising grandeur.</p>
+                    </div>
+                    <div class="wf-sparkle">&#10023;</div>
                 </div>
             </div>
-            <div class="timeline-item">
-                <div class="timeline-dot">2</div>
-                <div class="timeline-content">
-                    <h3>The Artistry</h3>
-                    <p>Our artists begin sketching and designing the digital proofs, incorporating authentic mandalas and motifs.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-dot">3</div>
-                <div class="timeline-content">
-                    <h3>The Craft</h3>
-                    <p>Once approved, we move to our artisanal printing presses, applying gold foil and assembling the suites.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-dot">4</div>
-                <div class="timeline-content">
-                    <h3>The Delivery</h3>
-                    <p>Your bespoke invitations are sealed with love and delivered securely to your doorstep.</p>
+
+            <div class="why-quote-container">
+                <div class="why-quote">
+                    <div class="quote-gold-corner top-left"></div>
+                    <div class="quote-gold-corner top-right"></div>
+                    <div class="quote-gold-corner bottom-left"></div>
+                    <div class="quote-gold-corner bottom-right"></div>
+
+                    <div class="big-q">&ldquo;</div>
+                    <blockquote>An invitation is the first chapter of your forever.</blockquote>
+                    <p class="quote-author">&mdash; Aurelia Royal Atelier</p>
+
+                    <div class="why-stats-row">
+                        <div class="why-stat-box">
+                            <span class="stat-num">10,000+</span>
+                            <span class="stat-lbl">Families Celebrated</span>
+                        </div>
+                        <div class="why-stat-divider"></div>
+                        <div class="why-stat-box">
+                            <span class="stat-num">4.9 &#9733;</span>
+                            <span class="stat-lbl">Client Rating</span>
+                        </div>
+                        <div class="why-stat-divider"></div>
+                        <div class="why-stat-box">
+                            <span class="stat-num">100%</span>
+                            <span class="stat-lbl">Custom Artisanship</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="vault" class="featured-collection">
-        <div class="section-header">
-            <h2>The Royal Vault</h2>
-            <p>Our most exquisite and culturally rich creations</p>
+    <!-- Testimonials -->
+    <section id="echoes" class="testi-section">
+        <p class="sec-label">What Our Customers Say</p>
+        <h2>Love Stories,<br><em>Happy Customers</em></h2>
+        <div class="testi-grid">
+            <div class="testi-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Absolutely beautiful designs and super easy customisation. Our families loved the digital invites!"</p><h4>Riya Sharma</h4></div>
+            <div class="testi-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Traditional yet modern. Exactly what we were looking for. Highly recommended to everyone!"</p><h4>Ankit &amp; Neha</h4></div>
+            <div class="testi-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Amazing quality and quick digital delivery. The team was very supportive throughout."</p><h4>Karan Mehta</h4></div>
         </div>
-        
-        <div class="grid-container">
-            <!-- Card 1 -->
-            <div class="card-wrapper">
-                <div class="card">
-                    <div class="card-img-container">
-                        <img src="assets/Products/ChatGPT Image Sep 2, 2026, 11_28_46 AM.png" alt="Royal Wedding Card">
-                        <div class="card-glow"></div>
-                    </div>
-                    <div class="card-info">
-                        <h3>Crimson Heritage</h3>
-                        <div class="card-meta">
-                            <span class="rarity">Premium</span>
-                            <span class="price">Enquire</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    </section>
 
-            <!-- Card 2 -->
-            <div class="card-wrapper">
-                <div class="card">
-                    <div class="card-img-container">
-                        <img src="assets/Products/ChatGPT Image Sep 2, 2026, 11_28_56 AM.png" alt="Royal Wedding Card">
-                        <div class="card-glow"></div>
-                    </div>
-                    <div class="card-info">
-                        <h3>Golden Echoes</h3>
-                        <div class="card-meta">
-                            <span class="rarity">Bespoke</span>
-                            <span class="price">Enquire</span>
-                        </div>
-                    </div>
-                </div>
+    <!-- Gallery (Real Celebrations Showcase) -->
+    <section class="gallery-section">
+        <div class="gallery-bg-glow"></div>
+        <div class="gallery-header-wrap">
+            <span class="gallery-pill">&#10022; Live Moments &bull; Real Couples &#10022;</span>
+            <p class="sec-label">Get Inspired</p>
+            <h2 class="gallery-title">Real Celebrations,<br><em>Real Happiness</em></h2>
+            <div class="gallery-divider">
+                <span class="g-line"></span>
+                <span class="g-gem">&#10022;</span>
+                <span class="g-line"></span>
             </div>
+            <p class="gallery-desc">Cherished memories and unforgettable beginnings shared by our regal couples across the world.</p>
 
-            <!-- Card 3 -->
-            <div class="card-wrapper">
-                <div class="card">
-                    <div class="card-img-container">
-                        <img src="assets/Products/ChatGPT Image Sep 2, 2026, 11_29_04 AM.png" alt="Royal Wedding Card">
-                        <div class="card-glow"></div>
-                    </div>
-                    <div class="card-info">
-                        <h3>Marigold Promise</h3>
-                        <div class="card-meta">
-                            <span class="rarity">Signature</span>
-                            <span class="price">Enquire</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="card-wrapper">
-                <div class="card">
-                    <div class="card-img-container">
-                        <img src="assets/Products/ChatGPT Image Sep 2, 2026, 11_29_13 AM.png" alt="Royal Wedding Card">
-                        <div class="card-glow"></div>
-                    </div>
-                    <div class="card-info">
-                        <h3>Emerald Elegance</h3>
-                        <div class="card-meta">
-                            <span class="rarity">Premium</span>
-                            <span class="price">Enquire</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="card-wrapper">
-                <div class="card">
-                    <div class="card-img-container">
-                        <img src="assets/Products/ChatGPT Image Sep 2, 2026, 11_29_22 AM.png" alt="Royal Wedding Card">
-                        <div class="card-glow"></div>
-                    </div>
-                    <div class="card-info">
-                        <h3>Regal Lotus</h3>
-                        <div class="card-meta">
-                            <span class="rarity">Bespoke</span>
-                            <span class="price">Enquire</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 6 -->
-            <div class="card-wrapper">
-                <div class="card">
-                    <div class="card-img-container">
-                        <img src="assets/Products/ChatGPT Image Sep 2, 2026, 11_29_31 AM.png" alt="Royal Wedding Card">
-                        <div class="card-glow"></div>
-                    </div>
-                    <div class="card-info">
-                        <h3>Royal Canvas</h3>
-                        <div class="card-meta">
-                            <span class="rarity">Signature</span>
-                            <span class="price">Enquire</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 7 -->
-            <div class="card-wrapper">
-                <div class="card">
-                    <div class="card-img-container">
-                        <img src="assets/Products/ChatGPT Image Sep 2, 2026, 11_31_09 AM.png" alt="Royal Wedding Card">
-                        <div class="card-glow"></div>
-                    </div>
-                    <div class="card-info">
-                        <h3>Maharaja Suite</h3>
-                        <div class="card-meta">
-                            <span class="rarity">Premium</span>
-                            <span class="price">Enquire</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 8 -->
-            <div class="card-wrapper">
-                <div class="card">
-                    <div class="card-img-container">
-                        <img src="assets/Products/ChatGPT Image Sep 2, 2026, 11_32_12 AM.png" alt="Royal Wedding Card">
-                        <div class="card-glow"></div>
-                    </div>
-                    <div class="card-info">
-                        <h3>Mandala Grace</h3>
-                        <div class="card-meta">
-                            <span class="rarity">Bespoke</span>
-                            <span class="price">Enquire</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 9 -->
-            <div class="card-wrapper">
-                <div class="card">
-                    <div class="card-img-container">
-                        <img src="assets/Products/ChatGPT Image Sep 2, 2026, 11_34_09 AM.png" alt="Royal Wedding Card">
-                        <div class="card-glow"></div>
-                    </div>
-                    <div class="card-info">
-                        <h3>Eternal Bond</h3>
-                        <div class="card-meta">
-                            <span class="rarity">Signature</span>
-                            <span class="price">Enquire</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="gallery-filters">
+                <button class="g-filter active" data-filter="all">All Celebrations</button>
+                <button class="g-filter" data-filter="weddings">Royal Weddings</button>
+                <button class="g-filter" data-filter="engagements">Engagements</button>
+                <button class="g-filter" data-filter="festivals">Receptions &amp; Sangeet</button>
             </div>
         </div>
-    <section id="echoes" class="echoes-section">
-        <div class="section-header">
-            <h2>Echoes of Love</h2>
-            <p>Words from couples who began their forever with us</p>
-        </div>
-        <div class="echoes-grid">
-            <div class="echo-card">
-                <div class="stars">★★★★★</div>
-                <p>"The gold foil detailing on our invitations was breathtaking. Our guests are still talking about how royal they looked!"</p>
-                <h4>- Priya & Rohan</h4>
+
+        <div class="gallery-grid">
+            <!-- Item 1 (Tall Feature) -->
+            <div class="g-item g-tall" data-category="weddings">
+                <div class="g-card-inner">
+                    <img src="assets/Products/ChatGPT Image Sep 2, 2026, 11_29_31 AM.png" alt="Arjun & Riddhi Wedding Invite">
+                    <div class="g-overlay">
+                        <div class="g-tag">Royal Wedding</div>
+                        <h3>Arjun &amp; Riddhi</h3>
+                        <p>Udaipur Palace &bull; Bespoke Foil</p>
+                        <span class="g-zoom-btn">&#9906;</span>
+                    </div>
+                </div>
             </div>
-            <div class="echo-card">
-                <div class="stars">★★★★★</div>
-                <p>"They truly captured the essence of our cultural background. The custom mandala design was everything we dreamed of."</p>
-                <h4>- Anjali & Vikram</h4>
+
+            <!-- Item 2 -->
+            <div class="g-item" data-category="engagements">
+                <div class="g-card-inner">
+                    <img src="assets/Products/ChatGPT Image Sep 2, 2026, 11_31_09 AM.png" alt="Pooja & Rohit Ring Ceremony">
+                    <div class="g-overlay">
+                        <div class="g-tag">Engagement</div>
+                        <h3>Pooja &amp; Rohit</h3>
+                        <p>Jaipur Heritage &bull; Pichwai Art</p>
+                        <span class="g-zoom-btn">&#9906;</span>
+                    </div>
+                </div>
             </div>
-            <div class="echo-card">
-                <div class="stars">★★★★★</div>
-                <p>"From the first consultation to the final delivery, the team was incredibly professional. True artisans."</p>
-                <h4>- Meera & Arjun</h4>
+
+            <!-- Item 3 -->
+            <div class="g-item" data-category="festivals">
+                <div class="g-card-inner">
+                    <img src="assets/Products/ChatGPT Image Sep 2, 2026, 11_34_09 AM.png" alt="Vikas & Neha Sangeet Night">
+                    <div class="g-overlay">
+                        <div class="g-tag">Sangeet &amp; Dhol</div>
+                        <h3>Vikas &amp; Neha</h3>
+                        <p>Peacock Royalty &bull; Musical Card</p>
+                        <span class="g-zoom-btn">&#9906;</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4 (Wide Banner) -->
+            <div class="g-item g-wide" data-category="weddings">
+                <div class="g-card-inner">
+                    <img src="assets/Products/ChatGPT Image Sep 2, 2026, 11_28_46 AM.png" alt="Rahul & Priya Grand Celebration">
+                    <div class="g-overlay">
+                        <div class="g-tag">Grand Vivah</div>
+                        <h3>Rahul &amp; Priya</h3>
+                        <p>The Grand Imperial &bull; Gold Foil Embellished</p>
+                        <span class="g-zoom-btn">&#9906;</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="g-item" data-category="weddings">
+                <div class="g-card-inner">
+                    <img src="assets/Products/ChatGPT Image Sep 2, 2026, 11_29_13 AM.png" alt="Divine Union E-Invite">
+                    <div class="g-overlay">
+                        <div class="g-tag">Vedic Rites</div>
+                        <h3>Aditya &amp; Ananya</h3>
+                        <p>Floral Shloka Heritage</p>
+                        <span class="g-zoom-btn">&#9906;</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="g-item" data-category="engagements">
+                <div class="g-card-inner">
+                    <img src="assets/Products/ChatGPT Image Sep 2, 2026, 11_28_56 AM.png" alt="Floral Royale E-Invite">
+                    <div class="g-overlay">
+                        <div class="g-tag">Ring Ceremony</div>
+                        <h3>Kabir &amp; Tara</h3>
+                        <p>Rose Gold Botanical</p>
+                        <span class="g-zoom-btn">&#9906;</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact-section">
-        <div class="section-header">
-            <h2>Start Your Journey</h2>
-            <p>Connect with our artisans to craft your perfect invitation</p>
-        </div>
-        
-        <div class="contact-container">
-            <div class="contact-info">
-                <h3>Get In Touch</h3>
-                <p>We would be honored to be a part of your celebration. Reach out to schedule a private consultation.</p>
-                <ul class="contact-details">
-                    <li><span class="contact-icon">📍</span> 123 Royal Heritage Marg, Jaipur</li>
-                    <li><span class="contact-icon">📞</span> +91 98765 43210</li>
-                    <li><span class="contact-icon">✉️</span> namaste@aureliacards.com</li>
-                </ul>
-            </div>
-            
-            <form class="contact-form" onsubmit="event.preventDefault();">
-                <div class="input-row">
-                    <div class="input-field">
-                        <input type="text" id="name" required placeholder="Your Name">
-                    </div>
-                    <div class="input-field">
-                        <input type="email" id="email" required placeholder="Your Email">
-                    </div>
-                </div>
-                <div class="input-field">
-                    <input type="text" id="subject" required placeholder="Wedding Date & Venue">
-                </div>
-                <div class="input-field">
-                    <textarea id="message" rows="4" required placeholder="Tell us about your dream invitation..."></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Inquiry</button>
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="nl-inner">
+            <div class="nl-text"><h3>Be a Part of Our Celebration Circle</h3><p>Get exclusive designs, offers and inspiration straight to your inbox.</p></div>
+            <form class="nl-form" onsubmit="event.preventDefault();this.reset();alert('Subscribed!');">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="btn btn-gold-solid">Subscribe &#8594;</button>
             </form>
         </div>
     </section>
 
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+        <div class="section-header">
+            <h2>Start Your Journey</h2>
+            <p>Connect with our artisans to craft your perfect digital invitation</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Get In Touch</h3>
+                <p>We would be honoured to be a part of your celebration. Reach out for a free online consultation.</p>
+                <ul class="contact-details">
+                    <li><span class="contact-icon">&#128172;</span> WhatsApp Us Anytime</li>
+                    <li><span class="contact-icon">&#128222;</span> +91 98765 43210</li>
+                    <li><span class="contact-icon">&#9993;</span> namaste@aureliacards.com</li>
+                </ul>
+            </div>
+            <form class="contact-form" onsubmit="event.preventDefault();alert('Thank you! We will get back to you soon.');">
+                <div class="input-row">
+                    <div class="input-field"><input type="text" id="name" required placeholder="Your Name"></div>
+                    <div class="input-field"><input type="email" id="email" required placeholder="Your Email"></div>
+                </div>
+                <div class="input-field"><input type="text" id="subject" placeholder="Occasion (Wedding / Engagement...)"></div>
+                <div class="input-field"><textarea id="message" rows="4" placeholder="Tell us about your dream invitation..."></textarea></div>
+                <button type="submit" class="btn btn-primary" style="width:100%;">Send Inquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-brand">
                 <a href="#home" class="logo">
-                    <span class="logo-icon">✧</span>
-                    <span class="logo-text">AURELIA</span>
+                    <span class="logo-icon">&#10022;</span>
+                    <span class="logo-text">AURELIA<br><small>AUTHENTIC E-INVITES</small></span>
                 </a>
-                <p>The premier destination for authenticated luxury cards.</p>
+                <p>Crafting digital invitations that celebrate love, tradition and new beginnings.</p>
+                <div class="footer-socials">
+                    <a href="#" class="soc">IG</a>
+                    <a href="#" class="soc">FB</a>
+                    <a href="#" class="soc">PT</a>
+                    <a href="#" class="soc">YT</a>
+                </div>
             </div>
             <div class="footer-links">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Authentication</a></li>
-                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#service">E-Invites</a></li>
+                    <li><a href="#vault">Collections</a></li>
+                    <li><a href="#journey">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">Customisation</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Track Order</a></li>
                 </ul>
             </div>
             <div class="footer-newsletter">
-                <h4>Stay Updated</h4>
-                <div class="input-group">
-                    <input type="email" placeholder="Enter your email">
-                    <button class="btn btn-primary">Subscribe</button>
-                </div>
+                <h4>Contact Us</h4>
+                <ul style="list-style:none;display:flex;flex-direction:column;gap:.7rem;">
+                    <li style="font-size:.88rem;color:rgba(255,255,255,.6);">+91 98765 43210</li>
+                    <li style="font-size:.88rem;color:rgba(255,255,255,.6);">namaste@aureliacards.com</li>
+                    <li style="font-size:.88rem;color:rgba(255,255,255,.6);">Jaipur, Rajasthan, India</li>
+                </ul>
+                <div class="footer-tagline-box"><p>Some<br>Invitations<br>Stay In Hearts<br>Forever</p></div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Aurelia Authentic Cards. All rights reserved.</p>
+            <p>&copy; 2026 Aurelia Authentic E-Invites. All rights reserved.</p>
+            <p>Made with &#10084; In India</p>
         </div>
     </footer>
+
+    <!-- Gallery Lightbox Modal -->
+    <div id="galleryLightbox" class="lightbox-modal" aria-hidden="true" role="dialog">
+        <div class="lightbox-backdrop"></div>
+        <div class="lightbox-dialog">
+            <button class="lightbox-close" id="lightboxClose" aria-label="Close modal">&times;</button>
+            <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">&#10094;</button>
+            <div class="lightbox-content">
+                <div class="lightbox-img-wrapper">
+                    <img id="lightboxImg" src="" alt="Gallery Preview">
+                </div>
+                <div class="lightbox-info">
+                    <span class="lightbox-tag" id="lightboxTag">Royal Wedding</span>
+                    <h3 id="lightboxTitle">Arjun &amp; Riddhi</h3>
+                    <p id="lightboxDesc">Udaipur Palace &bull; Bespoke Foil</p>
+                    <span class="lightbox-counter" id="lightboxCounter">1 / 6</span>
+                </div>
+            </div>
+            <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">&#10095;</button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
 </html>
+
