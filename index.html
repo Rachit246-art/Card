@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Authentic Cards - Premium Collection</title>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600;1,700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav id="navbar">
         <div class="nav-container">
-            <div class="logo">
+            <a href="#home" class="logo">
                 <span class="logo-icon">✧</span>
                 <span class="logo-text">AURELIA<br><small>AUTHENTIC CARDS</small></span>
-            </div>
+            </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#service">Service</a></li>
                 <li><a href="#journey">Journey</a></li>
@@ -22,32 +22,30 @@
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
             <div class="nav-actions">
-                <button class="icon-btn" aria-label="Search">🔍</button>
-                <button class="icon-btn" aria-label="Cart">🛒</button>
+                <a href="#contact" class="btn btn-primary nav-contact-btn">Contact Us</a>
                 <button class="icon-btn hamburger" id="hamburger" aria-label="Menu">☰</button>
             </div>
         </div>
     </nav>
 
-    <header id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="badge">Bespoke Invitations</div>
-                <h1>Crafting Your Perfect<br><span>Wedding Journey</span></h1>
-                <p>Elegant, authentic, and culturally rich Indian wedding invitations. Begin your forever with a card that tells your unique love story.</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">💬 Talk To Us</a>
-                    <a href="#vault" class="btn btn-secondary">Explore Vault</a>
-                </div>
+    <header id="home" class="hero-slider">
+        <div class="slider-track" id="sliderTrack">
+            <div class="slide">
+                <img src="assets/Hero section/Banner1.png" alt="Aurelia Cards Banner 1">
             </div>
-            <div class="hero-visual">
-                <div class="hero-card-wrapper" id="hero3D">
-                    <div class="hero-card">
-                        <img src="assets/card.jpg" alt="Premium Card">
-                        <div class="card-glow"></div>
-                    </div>
-                </div>
+            <div class="slide">
+                <img src="assets/Hero section/Banner2.png" alt="Aurelia Cards Banner 2">
             </div>
+            <div class="slide">
+                <img src="assets/Hero section/Banner3.png" alt="Aurelia Cards Banner 3">
+            </div>
+        </div>
+        <button class="slider-btn prev-btn" id="prevSlide" aria-label="Previous Slide">‹</button>
+        <button class="slider-btn next-btn" id="nextSlide" aria-label="Next Slide">›</button>
+        <div class="slider-dots" id="sliderDots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
         </div>
     </header>
 
@@ -336,10 +334,10 @@
     <footer>
         <div class="footer-content">
             <div class="footer-brand">
-                <div class="logo">
+                <a href="#home" class="logo">
                     <span class="logo-icon">✧</span>
                     <span class="logo-text">AURELIA</span>
-                </div>
+                </a>
                 <p>The premier destination for authenticated luxury cards.</p>
             </div>
             <div class="footer-links">

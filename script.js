@@ -84,4 +84,76 @@ document.addEventListener('DOMContentLoaded', () => {
         scrollObserver.observe(el);
     });
 
+    // Hero 3-Banner Slider Logic
+    const sliderTrack = document.getElementById('sliderTrack');
+    const slides = document.querySelectorAll('.slide');
+    const prevBtn = document.getElementById('prevSlide');
+    const nextBtn = document.getElementById('nextSlide');
+    const dots = document.querySelectorAll('.dot');
+    
+    if (sliderTrack && slides.length > 0) {
+        let currentIndex = 0;
+        let slideInterval;
+        const autoSlideDelay = 4500; // 4.5 seconds
+
+        const updateSlider = (index) => {
+            if (index < 0) index = slides.length - 1;
+            if (index >= slides.length) index = 0;
+            currentIndex = index;
+
+            sliderTrack.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+            dots.forEach((dot, idx) => {
+                if (idx === currentIndex) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+        };
+
+        const startAutoSlide = () => {
+            stopAutoSlide();
+            slideInterval = setInterval(() => {
+                updateSlider(currentIndex + 1);
+            }, autoSlideDelay);
+        };
+
+        const stopAutoSlide = () => {
+            if (slideInterval) clearInterval(slideInterval);
+        };
+
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                updateSlider(currentIndex + 1);
+                startAutoSlide();
+            });
+        }
+
+        if (prevBtn) {
+            prevBtn.addEventListener('click', () => {
+                updateSlider(currentIndex - 1);
+                startAutoSlide();
+            });
+        }
+
+        dots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                const targetIdx = parseInt(dot.getAttribute('data-index'), 10);
+                updateSlider(targetIdx);
+                startAutoSlide();
+            });
+        });
+
+        // Pause auto-sliding when mouse is hovering over hero slider
+        const heroSlider = document.querySelector('.hero-slider');
+        if (heroSlider) {
+            heroSlider.addEventListener('mouseenter', stopAutoSlide);
+            heroSlider.addEventListener('mouseleave', startAutoSlide);
+        }
+
+        // Initialize auto-sliding
+        startAutoSlide();
+    }
+
 });
