@@ -167,13 +167,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ---- Featured cards slider (with smooth auto-slide) ----
+    // ---- Featured cards slider (manual arrow navigation) ----
     const featTrack = document.getElementById("featTrack");
     const featPrev = document.getElementById("featPrev");
     const featNext = document.getElementById("featNext");
 
     if (featTrack) {
-        let featSlideInterval = null;
-
         const getScrollAmount = () => {
             const firstCard = featTrack.querySelector(".feat-card");
             return firstCard ? firstCard.offsetWidth + 24 : 224;
@@ -183,7 +182,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const step = getScrollAmount();
             const maxScroll = featTrack.scrollWidth - featTrack.clientWidth;
             
-            // Loop back to start if near or at the end
             if (featTrack.scrollLeft >= maxScroll - 20) {
                 featTrack.scrollTo({ left: 0, behavior: "smooth" });
             } else {
@@ -200,40 +198,13 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         };
 
-        const startAutoSlide = () => {
-            clearInterval(featSlideInterval);
-            featSlideInterval = setInterval(slideNextCard, 2500);
-        };
-
-        const stopAutoSlide = () => {
-            clearInterval(featSlideInterval);
-            featSlideInterval = null;
-        };
-
         if (featNext) {
-            featNext.addEventListener("click", () => {
-                slideNextCard();
-                startAutoSlide();
-            });
+            featNext.addEventListener("click", slideNextCard);
         }
 
         if (featPrev) {
-            featPrev.addEventListener("click", () => {
-                slidePrevCard();
-                startAutoSlide();
-            });
+            featPrev.addEventListener("click", slidePrevCard);
         }
-
-        const featOuter = featTrack.closest(".feat-cards-outer") || featTrack;
-        featOuter.addEventListener("mouseenter", stopAutoSlide);
-        featOuter.addEventListener("mouseleave", startAutoSlide);
-        featTrack.addEventListener("touchstart", stopAutoSlide, { passive: true });
-        featTrack.addEventListener("touchend", () => {
-            setTimeout(startAutoSlide, 1500);
-        }, { passive: true });
-
-        // Start auto slide
-        startAutoSlide();
     }
 
 
@@ -406,14 +377,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    // ---- Premium Occasions Auto-Slider ----
+    // ---- Premium Occasions Slider (Manual) ----
     const occT = document.getElementById("occTrack");
     const occP = document.getElementById("occPrev");
     const occN = document.getElementById("occNext");
     const occItemEls = document.querySelectorAll(".occ-item");
 
     if (occT && occP && occN) {
-        let occAutoInterval;
         let occActiveIdx = 0;
 
         function scrollToOccItem(idx) {
@@ -431,26 +401,17 @@ document.addEventListener('DOMContentLoaded', () => {
             occT.scrollTo({ left: scrollLeft, behavior: "smooth" });
         }
 
-        function startOccAuto() {
-            clearInterval(occAutoInterval);
-            occAutoInterval = setInterval(() => {
-                scrollToOccItem(occActiveIdx + 1);
-            }, 2800);
-        }
-
-        occP.addEventListener("click", () => { scrollToOccItem(occActiveIdx - 1); startOccAuto(); });
-        occN.addEventListener("click", () => { scrollToOccItem(occActiveIdx + 1); startOccAuto(); });
+        occP.addEventListener("click", () => scrollToOccItem(occActiveIdx - 1));
+        occN.addEventListener("click", () => scrollToOccItem(occActiveIdx + 1));
 
         occItemEls.forEach((item, i) => {
-            item.addEventListener("click", () => { scrollToOccItem(i); startOccAuto(); });
+            item.addEventListener("click", () => scrollToOccItem(i));
         });
 
-        occT.addEventListener("mouseenter", () => clearInterval(occAutoInterval));
-        occT.addEventListener("mouseleave", startOccAuto);
-
         // Init first item selected
-        occItemEls[0].classList.add("selected");
-        startOccAuto();
+        if (occItemEls.length > 0) {
+            occItemEls[0].classList.add("selected");
+        }
     }
 
 
