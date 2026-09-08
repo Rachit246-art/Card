@@ -1833,6 +1833,33 @@ h2 em { font-style: italic; color: var(--crimson-main); }
     margin-bottom: 2px;
 }
 
+.nav-logo-img {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    filter: drop-shadow(0 3px 10px rgba(184,147,68,0.3));
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.nav-logo-img:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 4px 14px rgba(184,147,68,0.55));
+}
+
+.footer-logo-img {
+    height: 75px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    filter: drop-shadow(0 3px 14px rgba(243,231,202,0.35));
+    transition: transform 0.3s ease;
+}
+
+.footer-logo-img:hover {
+    transform: scale(1.05);
+}
+
 .seal-text {
     font-family: var(--font-primary);
     font-size: 0.55rem;
@@ -3037,11 +3064,8 @@ footer::before {
     .nav-links {
         top: calc(70px + 32px);
     }
-    .logo-icon {
-        font-size: 1.7rem;
-    }
-    .logo-text {
-        font-size: 1.15rem;
+    .nav-logo-img {
+        height: 50px;
     }
     .nav-contact-btn {
         padding: 0.5rem 1.2rem;
