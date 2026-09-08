@@ -277,7 +277,7 @@ a.logo {
     gap: 0.8rem;
 }
 
-/* Responsive 3-Banner Hero Slider - Slight Height Boost */
+/* Responsive 3-Banner Hero Slider - Natural Proportion & No Crop */
 .hero-slider {
     position: relative;
     width: 100%;
@@ -299,7 +299,7 @@ a.logo {
 .slide {
     min-width: 100%;
     width: 100%;
-    aspect-ratio: 2.1 / 1;
+    aspect-ratio: 2400 / 1005;
     position: relative;
     overflow: hidden;
     line-height: 0;
@@ -1436,11 +1436,12 @@ h2 em { font-style: italic; color: var(--crimson-main); }
 
 .feat-img {
     position: relative;
-    aspect-ratio: 3/4;
-    border-radius: 10px;
+    aspect-ratio: 3 / 4.2;
+    border-radius: 14px;
     overflow: hidden;
     margin-bottom: 0.9rem;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    background: #180306;
 }
 .feat-img::before {
     content: '';
@@ -1457,6 +1458,7 @@ h2 em { font-style: italic; color: var(--crimson-main); }
 .feat-img img {
     width: 100%; height: 100%;
     object-fit: cover;
+    object-position: center 20%;
     transition: transform 0.5s ease;
     display: block;
 }
@@ -2357,9 +2359,9 @@ h2 em { font-style: italic; color: var(--crimson-main); }
     box-shadow: 0 12px 32px rgba(102,18,30,0.08);
     transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
     border: 2px solid rgba(140,106,46,0.25);
-    background: #fff;
+    background: #180306;
     cursor: pointer;
-    aspect-ratio: 4 / 3.3;
+    aspect-ratio: 4 / 4.2;
 }
 
 .g-item.filtered-out {
@@ -2388,6 +2390,7 @@ h2 em { font-style: italic; color: var(--crimson-main); }
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center 20%;
     display: block;
     transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -3047,7 +3050,7 @@ footer::before {
 
     /* Hero slider aspect ratio for tablets/mobile */
     .slide {
-        aspect-ratio: 16 / 9;
+        aspect-ratio: 2400 / 1005;
     }
     .slider-btn {
         width: 38px;
@@ -3167,8 +3170,18 @@ footer::before {
 
 @media (max-width: 480px) {
     .slide {
-        aspect-ratio: 4 / 3;
+        aspect-ratio: 2400 / 1005;
     }
+    .slider-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 1.2rem;
+    }
+    .prev-btn { left: 0.6rem; }
+    .next-btn { right: 0.6rem; }
+    .slider-dots { bottom: 0.6rem; }
+    .dot { width: 8px; height: 8px; }
+    .dot.active { width: 22px; }
     .occasions-section {
         padding: 3.5rem 0.5rem 3rem;
     }
